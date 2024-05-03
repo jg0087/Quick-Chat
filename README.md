@@ -1,7 +1,7 @@
 <p align="center">
-<img width="655" alt="" src="">
+<img width="655" alt="" src="Screenshot 2024-05-03 at 4.51.55 PM.png">
 </p>  
-
+QuickChat is your go-to online platform for fast and efficient text messaging. Connect with friends, family, and colleagues instantly and stay connected wherever you go!
 
 
 ## :sparkles: How it Works:
