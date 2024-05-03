@@ -1,11 +1,13 @@
 // server.js
-
+require('dotenv').config()
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const authRoutes = require("./routes/authRoutes");
 const UserModel = require("./models/User");
 const cors = require("cors");
+
+
 
 const app = express();
 
@@ -16,7 +18,7 @@ app.use(cors());
 // mongodb+srv://qc-admin:<password>@quick-chat-cluster.ixm0r1k.mongodb.net/
 mongoose
   .connect(
-    "mongodb+srv://jg0087:Nosirven.00@jorge-cluster.jeeqvwx.mongodb.net/quick-chat?retryWrites=true&w=majority&appName=jorge-cluster",
+    process.env.MONGO_URI,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
