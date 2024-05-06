@@ -96,6 +96,7 @@ const HomePage = () => {
 
   const loggedInUser = localStorage.getItem("loggedInUser");
 
+
   // Sample student data
   const sampleStudents = [
     {
