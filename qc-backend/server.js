@@ -189,13 +189,4 @@ app.put("/api/message/:id", async (req, res) => {
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
-app.get("/*", function (req, res) {
-  res.sendFile(
-    path.join(__dirname, "../qc-frontend/build/index.html"),
-    function (err) {
-      if (err) {
-        res.status(500).send(err);
-      }
-    }
-  );
-});
+
