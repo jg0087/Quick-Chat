@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd qc-frontend/src && node app.js"
+    "start": "cd qc-frontend/src && node App.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
