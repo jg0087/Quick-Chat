@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const authRoutes = require("./routes/authRoutes");
 const UserModel = require("./models/User");
 const cors = require("cors");
+const path = require('path')
 
 
 
@@ -81,6 +82,21 @@ app.post("/api/register", authorize, async (req, res) => {
     res.status(500).send(err.message);
   }
 });
+//---deployement-----
+const __dirname1 = path.resolve();
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname1, "/qc-frontend/build")));
+
+  app.get("*", (req, res) =>
+    res.sendFile(path.resolve(__dirname1, "qc-frontend", "build", "index.html"))
+  );
+} else {
+  app.get("/", (req, res) => {
+    res.send("API is running..");
+  });
+}
+//---deployement-----
 
 const jwt = require("jsonwebtoken");
 const { applyDefaults } = require("./models/User");
