@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd qc-backend && node server.js"
+    "start": "cd qc-backend && node server.js",
+    "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix qc-frontend && npm run build --prefix qc-frontend"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
