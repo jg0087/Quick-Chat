@@ -31,7 +31,7 @@ QuickChat is your go-to online platform for fast and efficient text messaging. C
 - Online and Offline status of the users.
 - Users will be able to send files to each other.
 - Enhanced UI/UX.
-- Real time messaging 
+
 
 <p align="center">
 <img src="https://forthebadge.com/images/badges/built-with-love.png" title="JavaScript" alt="JavaScript" width="100" height="20" align="center"/>&nbsp;</p> 
